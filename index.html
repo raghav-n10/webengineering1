@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webenglab1</title>
+    <title>URC Hotel - Room Booking Management</title>
 </head>
 <body>
-    this is the first experiment of web engineering lab 
+
+    <!-- Header -->
+    <h1 align="center">URC Hotel</h1>
+    <h2 align="center">Room Booking Management System</h2>
+    <hr>
+
+    <!-- Hotel Introduction -->
+    <h3>Welcome to URC Hotel</h3>
+    <p>
+        URC Hotel offers luxury rooms with excellent services at affordable prices.  
+        Book your stay easily using our simple booking form below.  
+    </p>
+
+    <!-- Facilities -->
+    <h3>Facilities We Offer</h3>
+    <ul>
+        <li>Free Wi-Fi</li>
+        <li>24x7 Room Service</li>
+        <li>Complimentary Breakfast</li>
+        <li>Swimming Pool</li>
+        <li>Gym and Spa</li>
+        <li>Conference Hall</li>
+    </ul>
+
+    <!-- Room Availability Table -->
+    <h3>Available Rooms</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Room Type</th>
+            <th>Price per Night</th>
+            <th>Max Guests</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Single Room</td>
+            <td>₹1500</td>
+            <td>1</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Double Room</td>
+            <td>₹2500</td>
+            <td>2</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Deluxe Room</td>
+            <td>₹4000</td>
+            <td>3</td>
+            <td>Few Left</td>
+        </tr>
+        <tr>
+            <td>Suite</td>
+            <td>₹6000</td>
+            <td>4</td>
+            <td>Booked</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Booking Form -->
+    <h3>Room Booking Form</h3>
+    <form>
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="text" name="phone"><br><br>
+
+        <label>Check-in Date:</label><br>
+        <input type="date" name="checkin"><br><br>
+
+        <label>Check-out Date:</label><br>
+        <input type="date" name="checkout"><br><br>
+
+        <label>Room Type:</label><br>
+        <select name="roomtype">
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+            <option>Suite</option>
+        </select><br><br>
+
+        <label>Number of Guests:</label><br>
+        <input type="number" name="guests" min="1" max="10"><br><br>
+
+        <input type="submit" value="Book Now">
+        <input type="reset" value="Clear">
+    </form>
+
+    <hr>
+
+    <!-- Contact Information -->
+    <h3>Contact Us</h3>
+    <p>
+        Address: URC Hotel, Erode, Tamil Nadu <br>
+        Phone: +91 98765 43210 <br>
+        Email: contact@urchotel.com
+    </p>
+
+    <p align="center">&copy; 2025 URC Hotel. All rights reserved.</p>
+
 </body>
 </html>
